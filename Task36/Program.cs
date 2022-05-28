@@ -28,12 +28,9 @@ void PrintArray(int[] ArrayToPrint)
 int SumOddElements(int[] ArrayToSeek)
 {
     int result = 0;
-    for (int i = 1; i < ArrayToSeek.Length; i++)
+    for (int i = 1; i < ArrayToSeek.Length; i += 2)
     {
-        if (i % 2 != 0)
-        {
-            result = result + ArrayToSeek[i];
-        }
+        result = result + ArrayToSeek[i];
     }
     return result;
 }
